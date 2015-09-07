@@ -11,6 +11,10 @@
 		9237B2141B9CEB5B0078BE31 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9237B2131B9CEB5B0078BE31 /* Images.xcassets */; };
 		9237B2171B9CEB5B0078BE31 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9237B2151B9CEB5B0078BE31 /* MainMenu.xib */; };
 		9237B2231B9CEB5B0078BE31 /* ScaryBugsMacTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9237B2221B9CEB5B0078BE31 /* ScaryBugsMacTests.swift */; };
+		9237B22E1B9CEBC60078BE31 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9237B22C1B9CEBC60078BE31 /* MasterViewController.swift */; };
+		9237B22F1B9CEBC60078BE31 /* MasterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9237B22D1B9CEBC60078BE31 /* MasterViewController.xib */; };
+		9237B2331B9CEE470078BE31 /* ScaryBugData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9237B2321B9CEE470078BE31 /* ScaryBugData.swift */; };
+		9237B2351B9CEEC90078BE31 /* ScaryBugDoc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9237B2341B9CEEC90078BE31 /* ScaryBugDoc.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +36,10 @@
 		9237B21C1B9CEB5B0078BE31 /* ScaryBugsMacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScaryBugsMacTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9237B2211B9CEB5B0078BE31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9237B2221B9CEB5B0078BE31 /* ScaryBugsMacTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaryBugsMacTests.swift; sourceTree = "<group>"; };
+		9237B22C1B9CEBC60078BE31 /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MasterViewController.swift; path = ../MasterViewController.swift; sourceTree = "<group>"; };
+		9237B22D1B9CEBC60078BE31 /* MasterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MasterViewController.xib; path = ../MasterViewController.xib; sourceTree = "<group>"; };
+		9237B2321B9CEE470078BE31 /* ScaryBugData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScaryBugData.swift; sourceTree = "<group>"; };
+		9237B2341B9CEEC90078BE31 /* ScaryBugDoc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScaryBugDoc.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,9 +81,9 @@
 		9237B20E1B9CEB5B0078BE31 /* ScaryBugsMac */ = {
 			isa = PBXGroup;
 			children = (
-				9237B2111B9CEB5B0078BE31 /* AppDelegate.swift */,
+				9237B2311B9CEDBB0078BE31 /* Model */,
+				9237B2301B9CED860078BE31 /* View */,
 				9237B2131B9CEB5B0078BE31 /* Images.xcassets */,
-				9237B2151B9CEB5B0078BE31 /* MainMenu.xib */,
 				9237B20F1B9CEB5B0078BE31 /* Supporting Files */,
 			);
 			path = ScaryBugsMac;
@@ -104,6 +112,26 @@
 				9237B2211B9CEB5B0078BE31 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9237B2301B9CED860078BE31 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9237B2111B9CEB5B0078BE31 /* AppDelegate.swift */,
+				9237B22C1B9CEBC60078BE31 /* MasterViewController.swift */,
+				9237B22D1B9CEBC60078BE31 /* MasterViewController.xib */,
+				9237B2151B9CEB5B0078BE31 /* MainMenu.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		9237B2311B9CEDBB0078BE31 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9237B2321B9CEE470078BE31 /* ScaryBugData.swift */,
+				9237B2341B9CEEC90078BE31 /* ScaryBugDoc.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,6 +216,7 @@
 			files = (
 				9237B2141B9CEB5B0078BE31 /* Images.xcassets in Resources */,
 				9237B2171B9CEB5B0078BE31 /* MainMenu.xib in Resources */,
+				9237B22F1B9CEBC60078BE31 /* MasterViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,6 +234,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9237B2331B9CEE470078BE31 /* ScaryBugData.swift in Sources */,
+				9237B22E1B9CEBC60078BE31 /* MasterViewController.swift in Sources */,
+				9237B2351B9CEEC90078BE31 /* ScaryBugDoc.swift in Sources */,
 				9237B2121B9CEB5B0078BE31 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
